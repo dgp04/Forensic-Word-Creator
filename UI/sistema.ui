@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>262</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema - Word Creator</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_sistema">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Elija el sistema del teléfono móvil</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_android">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: transparent;
+}
+
+QPushButton:hover{
+background-color: rgb(189, 189, 189);
+border: none;
+border-radius: 5px;
+}</string>
+         </property>
+         <property name="icon">
+          <iconset resource="src/recursos.qrc">
+           <normaloff>:/logos/android.png</normaloff>:/logos/android.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>200</width>
+           <height>300</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_ios">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: transparent;
+}
+
+QPushButton:hover{
+background-color: rgb(189, 189, 189);
+border: none;
+border-radius: 5px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="src/recursos.qrc">
+           <normaloff>:/logos/IOS.png</normaloff>:/logos/IOS.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>150</width>
+           <height>200</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="src/recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

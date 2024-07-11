@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>448</width>
+    <height>242</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Introduce los datos requeridos para copiar los archivos a la 
+nueva carpeta y crear el Word:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_db">
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+border: none;
+border-bottom: 1px solid black;
+background-color: transparent;
+}</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Introduce la base de datos (msgstore.db)...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_db">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: white;
+background-color: rgb(74, 152, 255);
+border-radius: 5px;
+padding: 5px; 
+}
+QPushButton:hover{
+text-decoration: underline;
+background-color: rgb(37, 77, 255)
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Seleccionar archivo</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_nueva_carpeta">
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+border: none;
+border-bottom: 1px solid black;
+background-color: transparent;
+}</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Introduzca ruta de nueva carpeta...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_nueva_carpeta">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: white;
+background-color: rgb(74, 152, 255);
+border-radius: 5px;
+padding: 5px; 
+}
+QPushButton:hover{
+text-decoration: underline;
+background-color: rgb(37, 77, 255)
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Seleccionar carpeta</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_multimedia">
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+border: none;
+border-bottom: 1px solid black;
+background-color: transparent;
+}</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="placeholderText">
+          <string>Introduzca ruta archivos multimedia...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_multimedia">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: white;
+background-color: rgb(74, 152, 255);
+border-radius: 5px;
+padding: 5px; 
+}
+QPushButton:hover{
+text-decoration: underline;
+background-color: rgb(37, 77, 255)
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Seleccionar carpeta</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_telefono">
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+border: none;
+border-bottom: 1px solid black;
+background-color: transparent;
+}</string>
+         </property>
+         <property name="placeholderText">
+          <string>Introduzca número de teléfono...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_telefono">
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_tiene_multimedia">
+         <property name="text">
+          <string>¿Ya tienes la carpeta con la multimedia?</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_tiene_multimedia">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: blue;
+border: none;
+background-color: transparent;
+text-align: left;
+}
+QPushButton:hover{
+text-decoration: underline;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Pulsa aquí</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>90</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QPushButton" name="btn_copiar">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: white;
+background-color: rgb(74, 152, 255);
+border-radius: 5px;
+padding: 5px; 
+}
+QPushButton:hover{
+text-decoration: underline;
+background-color: rgb(37, 77, 255)
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Copiar archivos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_reiniciar">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: white;
+background-color: rgb(74, 152, 255);
+border-radius: 5px;
+padding: 5px; 
+}
+QPushButton:hover{
+text-decoration: underline;
+background-color: rgb(37, 77, 255)
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Reiniciar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

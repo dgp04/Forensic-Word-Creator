@@ -1,0 +1,6 @@
+{
+    "__comentario__": "En la interrogación se añade automáticamente el número de teléfono",
+    
+    "consulta_android": "SELECT file_path, file_hash FROM message AS m JOIN chat AS c ON c._id = m.chat_row_id JOIN jid AS j ON j._id = c.jid_row_id LEFT JOIN message_media AS md ON md.message_row_id = m._id WHERE j.user LIKE ? AND j.type = '0' AND message_type <> 0 AND file_path IS NOT NULL ORDER BY m.timestamp",
+    "consulta_ios": "SELECT fileID, relativePath FROM Files WHERE relativePath LIKE ?"
+}

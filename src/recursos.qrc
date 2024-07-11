@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="logos">
+    <file>android.png</file>
+    <file>IOS.png</file>
+  </qresource>
+</RCC>
